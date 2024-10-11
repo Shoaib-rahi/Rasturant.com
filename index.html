@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stlyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="showCart" id="showCart">
+  
+<ul class="product-lists"></ul>
+
+
+
+
+
+
+        <button class="close" onclick="closeMenue()">Close Menue</button>
+
+    </div>
+        <header>
+            <nav>
+                <div class="logo">
+                  <h4>  Mushtaq HOtel</h4>
+                </div>
+                <div class="list">
+                    <ul id="product-list">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#trending">Trending Food</a></li>
+                        <li><a href="#OurMenue">Our menue</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="cart"  onclick="showCart()"><span id="count">0</span>
+                   <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                   </div>
+                </div>
+                <div class="menuebar" onclick="menueBar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main id="Home">
+            <div class="content-side">
+                <h1>Enjoy Our <br> <span> Delicious Meal</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem ipsum animi iusto nam vel dolore recusandae qui dolorem impedit nisi, nostrum a dicta fuga inventore corrupti, repellendus voluptatem magnam?</p>
+                <button>Book A Table</button>
+            </div>
+            <div class="img-side">
+                <img src="images/food.png" alt="">
+            </div>
+        </main>
+
+
+        <section id="OurMenue">
+            <h4>Our Menue</h4>
+            <div class="image-container">
+                <div class="img">
+                    <img src="images/food1.jpeg" alt="">
+                    <h1>Spicy Burger with extra chees</h1>
+                    <h3>Price : 599</h3>
+                    <button onclick="plusOrder()">Add to cart</button>
+                </div>
+                <div class="img">
+                    <img src="images/food2.jpeg" alt="">
+                    <h1>Spicy Burger with extra chees</h1>
+                    <h3>Price : 599</h3>
+                    <button onclick="plusOrder()">Add to cart</button>
+                </div>
+
+                <div class="img">
+                    <img src="images/food3.jpeg" alt="">
+                    <h1>Spicy Burger with extra chees</h1>
+                    <h3>Price : 599</h3>
+                    <button onclick="plusOrder()">Add to cart</button>
+                </div>
+                <div class="img">
+                    <img src="images/food4.jpeg" alt="">
+                    <h1>Spicy Burger with extra chees</h1>
+                    <h3>Price : 599</h3>
+                    <button onclick="plusOrder()">Add to cart</button>
+                </div>
+                <div class="img">
+                    <img src="images/food2.jpeg" alt="">
+                    <h1>Spicy Burger with extra chees</h1>
+                    <h3>Price : 599</h3>
+                    <button onclick="plusOrder()">Add to cart</button>
+                </div>
+                <div class="img">
+                    <img src="images/food1.jpeg" alt="">
+                    <h1>Spicy Burger with extra chees</h1>
+                    <h3>Price : 599</h3>
+                    <button onclick="plusOrder()">Add to cart</button>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="section-2" id="trending">
+            <h3>Trending Food</h3>
+            <div class="searching-food">
+                <form>
+                    <input type="text" placeholder="search you favorute food" id="searc-Food" onkeyup="search()" >
+                    <button>Search</button>
+                </form>
+                <div class="dishes-lists">
+                    <div class="dish">
+                        <img src="images/food1.jpeg" alt="">
+                        <h1>Spicy burger</h1>
+                        <h4>PK:599</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food2.jpeg" alt="">
+                        <h1>Chicken Biryani</h1>
+                        <h4>PK:800</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food3.jpeg" alt="">
+                        <h1>french Friyes</h1>
+                        <h4>PK:230</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food4.jpeg" alt="">
+                        <h1>Sheer Korma</h1>
+                        <h4>PK:150</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food3.jpeg" alt="">
+                        <h1>Malai KOfta</h1>
+                        <h4>PK:1000</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food1.jpeg" alt="">
+                        <h1>Korma Salan</h1>
+                        <h4>PK:699</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food2.jpeg" alt="">
+                        <h1>Zinger Burger</h1>
+                        <h4>PK:400</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food3.jpeg" alt="">
+                        <h1>Mayo Roll</h1>
+                        <h4>PK:320</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food4.jpeg" alt="">
+                        <h1>Crispy Roll</h1>
+                        <h4>PK:220</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food1.jpeg" alt="">
+                        <h1>Crunchy Roll</h1>
+                        <h4>PK:300</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food2.jpeg" alt="">
+                        <h1>Chicken Chomine</h1>
+                        <h4>PK:500</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food3.jpeg" alt="">
+                        <h1>White Kharai</h1>
+                        <h4>PK:200</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food1.jpeg" alt="">
+                        <h1>Nihar with Chpati</h1>
+                        <h4>PK:1100</h4>
+                    </div>
+                    <div class="dish">
+                        <img src="images/food3.jpeg" alt="">
+                        <h1>Naan</h1>
+                        <h4>PK:40</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-page" id="About">
+            <h1>About Page</h1>
+            <div class="container">
+            <div class="content-side-2">
+                <h4>We Provide  <br> <span> Best Services</span></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem ipsum animi iusto nam vel dolore recusandae qui dolorem impedit nisi, nostrum a dicta fuga inventore corrupti, repellendus voluptatem magnam?</p>
+                <button>Cotact Us</button>
+            </div>
+            <div class="img-side-2">
+                <img src="images/food.png" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="rounded"></div>
+
+
+        <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+      
+        <script src="script.js"></script>
+</body>
+</html>
